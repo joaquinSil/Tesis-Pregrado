@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chatbot de Ejercitación</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+
+        <style>
+            df-messenger {
+                z-index: 999;
+                position: fixed;
+                --df-messenger-font-color: #000;
+                --df-messenger-font-family: Google Sans;
+                --df-messenger-chat-background: #f3f6fc;
+                --df-messenger-message-user-background: #d3e3fd;
+                --df-messenger-message-bot-background: #fff;
+                bottom: 16px;
+                right: 16px;
+            }
+
+            body {
+                --df-messenger-chips-background: aqua;
+            }
+        </style>
+        
+        <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    </head>
+    <body>
+        <df-messenger project-id="possible-byway-420018" agent-id="c62171ce-1703-422b-8d09-0b2bb9f740b0" language-code="es" storage-option="none" session-ttl="1800" intent="start-event">
+            <df-messenger-chat-bubble placeholder-text=" " expanded ="True" allow-fullscreen="always"></df-messenger-chat-bubble>
+        </df-messenger>
+
+        <script></script>
+    </body>
+</html>
